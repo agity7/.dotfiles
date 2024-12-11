@@ -66,6 +66,8 @@ keymap.set("n", "<C-w><up>", "<C-w>+")
 keymap.set("n", "<C-w><down>", "<C-w>-")
 
 -- Diagnostics.
+-- Keybinding for opening diagnostic hover window
+keymap.set("n", ";k", vim.diagnostic.open_float, { desc = "Show Diagnostics Float" })
 -- keymap.set("n", "<C-j>", function()
 -- 	vim.diagnostic.goto_next()
 -- end, opts)
@@ -85,8 +87,8 @@ keymap.set("n", ";n", ":Noice<Enter>")
 -- Telescope.
 keymap.set("n", ";m", ":Telescope<Enter>")
 
--- Go back (Last, quit).
 keymap.set("n", ";q", ":q<Enter>")
+-- Go back (Last, quit).
 
 -- Save.
 keymap.set("n", ";w", ":w<Enter>")
