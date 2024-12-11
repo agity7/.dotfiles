@@ -6,4 +6,8 @@
 -- vim.opt.winbar = "%=%m %f"
 
 -- Set the leader key to space.
+
 vim.g.mapleader = " "
+
+-- Enable line wrapping
+vim.opt.wrap = true
